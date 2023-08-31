@@ -1,34 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+    Last updated on: 31st August 2023
 
-## Getting Started
+<div align=center>
+    <a href="https://promptopia-iota-orcin.vercel.app/">
+        <img width="702" src="https://github.com/calvinseptyanto/promptopia/assets/98633109/5c3f5517-5758-4bc9-8afe-c9617f4a4b97" alt="Nike">
+    </a>
 
-First, run the development server:
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# [Promptopia: AI-Powered Prompts](https://promptopia-iota-orcin.vercel.app/)
+
+![line]
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Development](#development)
+- [Tech Stack Used](#tech-stack-used)
+- [API Endpoints](#api-endpoints)
+- [Preview](#preview)
+- [License](#license)
+
+![line]
+
+## Introduction
+
+- 🌐 **Discover, Create, and Share Creative Prompts** 🌐
+  <br/>
+  With Promptopia, the possibilities are endless. Whether you're an artist, writer, designer, or simply someone looking to ignite their creativity, our platform is your ultimate source for inspiration. Create prompts that challenge the status quo, explore new horizons, and spark innovation.
+  
+- 🔍 **Seamless Search Functionality** 🔍
+  <br/>
+  Finding the perfect prompt has never been easier. Our search feature allows you to explore prompts and profiles, connecting with like-minded individuals who share your passion and vision. It's a hub for collaboration and networking that transcends borders and boundaries.
+
+- 🧑‍🤝‍🧑 **Personalized Profiles** 🧑‍🤝‍🧑
+  <br/>
+  Your journey on Promptopia is unique, and your profile reflects that. Showcase your creative portfolio, track your prompt deployments, and let the world discover your creative genius. Connect with fellow creators and build lasting connections that fuel your imagination.
+  
+- 📢 **Share Your Prompts with the World** 📢
+  <br/>
+  Promptopia isn't just a platform; it's a community. Share your prompts, collaborate on projects, and witness your ideas come to life. Join a global network of creators and be part of the creative revolution.
+
+![line]
+
+## Development
+
+```sh
+> npm install
+> npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![line]
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Tech Stack Used
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next.js: Framework
+- TailwindCSS: Styling
+- MongoDB: Database
+- Google Auth 2.0: Authentication
+- Git & Github: Version Control
+- Vercel: Hosting
 
-## Learn More
+![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=blue) ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-To learn more about Next.js, take a look at the following resources:
+![line]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## API Endpoints
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- POST /api/prompt/new : Create new prompt.
+- GET /api/users/${session.user.id}/posts: Get all posts for the user.
+- GET /api/users/${params?.id}/posts: Get all posts of the user on the user`s profile.
+- GET /api/prompt/${promptId} Get prompt.
+- PATCH /api/prompt/${promptId} Update prompt.
+- GET /api/prompts/${project}/prompts Get all prompts.
+- DELETE /api/prompt/${post._id.toString()} Delete prompt.
 
-## Deploy on Vercel
+![line]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Preview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![](https://github.com/calvinseptyanto/promptopia/assets/98633109/b508def5-904e-45aa-8b44-78f9f3ec5c56)
+
+![line]
+
+## License
+
+- See [LICENSE]
+
+**Calvin Septyanto**
+
+[line]: https://user-images.githubusercontent.com/75939390/137615281-3a875960-92cc-407f-97fe-fd2319bdb252.png
+[License]: https://github.com/calvinseptyanto/nike-landing-page/blob/main/LICENSE
+[badges]: https://github.com/Ileriayo/markdown-badges
+
